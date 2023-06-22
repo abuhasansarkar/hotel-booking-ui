@@ -1,0 +1,156 @@
+.header {
+  background-color: #003580;
+  padding: 20px 0 100px 0;
+  color: White;
+  position: relative;
+
+  &.hotellistMode {
+    padding: 20px 0 20px 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    .headerIcon {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      .listItem {
+        color: white;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: 1s all ease;
+
+        &:hover {
+          border: 1px solid white;
+        }
+        &.active {
+          border: 1px solid white;
+        }
+      }
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 34px;
+      margin-top: 30px;
+    }
+    p {
+      margin: 15px 0;
+    }
+    .headerbtn {
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      background-color: #0071c2;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .headerSearchArea {
+      width: 100%;
+      max-width: 1024px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: White;
+      height: 20px;
+      padding: 15px 0px;
+      border: 2px solid orange;
+      color: rgb(185, 181, 181);
+      position: absolute;
+      bottom: -25px;
+
+      .inputArea {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+        input {
+          outline: none;
+          font-size: 16px;
+          border: none;
+        }
+      }
+
+      .userArea {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        cursor: pointer;
+
+        .options {
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          color: #000000;
+          background: white;
+          border-radius: 10px;
+          border-bottom: 5px solid #003580;
+          
+          z-index: 2;
+
+          .optionItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              margin: 5px 10px;
+              font-size: 25px;
+              border: 2px solid #003580;
+              color: #003580;
+              border-radius: 5px;
+              cursor: pointer;
+              &:disabled {
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+
+      .searchbtn {
+        border: none;
+        padding: 15px;
+        color: white;
+        background-color: #0071c2;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .dateArea {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        .date {
+          position: absolute;
+          top: 40px;
+          left: 0;
+
+          border-bottom: 5px solid #003580;
+          border-radius: 10px;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}

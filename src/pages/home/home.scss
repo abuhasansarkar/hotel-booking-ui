@@ -1,0 +1,12 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+
+    .hometitle{
+        margin: 20px 0 10px 0;
+    }
+}
